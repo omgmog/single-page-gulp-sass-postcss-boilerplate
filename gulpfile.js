@@ -80,3 +80,6 @@ gulp.task('serve', ['watch'], function () {
 
 gulp.task('default', ['build', 'watch']);
 
+var taskListing = require('gulp-task-listing');
+// Add a task to render the output
+gulp.task('help', taskListing);

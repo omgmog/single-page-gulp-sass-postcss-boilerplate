@@ -12,6 +12,7 @@
     "gulp-postcss": "^6.0.1",
     "gulp-sass": "^2.1.1",
     "gulp-style-inject": "0.0.3",
+    "gulp-task-listing": "^1.0.1",
     "gulp-webserver": "^0.9.1",
     "postcss-merge-rules": "^2.0.3"
   }
