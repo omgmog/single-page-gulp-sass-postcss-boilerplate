@@ -1,0 +1,18 @@
+{
+  "title": "single-page-gulp-sass-postcss-boilerplate",
+  "description": "I end up doing this a lot for single page websites, so here it is as a boilerplate.",
+  "repository": "git://git@github.com:omgmog/single-page-gulp-sass-postcss-boilerplate.git",
+  "license": "WTFPL",
+  "README": "README.md",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "gulp": "^3.9.0",
+    "gulp-ext-replace": "^0.2.0",
+    "gulp-liquid": "^0.1.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-style-inject": "0.0.3",
+    "gulp-webserver": "^0.9.1",
+    "postcss-merge-rules": "^2.0.3"
+  }
+}
