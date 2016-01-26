@@ -62,12 +62,10 @@ gulp.task('build:html', ['build:postcss'], function () {
     .pipe(gulp.dest(DIST_ROOT));
 });
 
+gulp.task('build', ['build:html', 'build:postcss', 'build:scss'], function () {});
 
-gulp.task('doitall', ['build:html', 'build:postcss', 'build:scss'], function () {
-  console.log('did it all');
-});
 gulp.task('watch', function () {
-  gulp.watch(SRC_ROOT + '**/*.*', ['doitall']);
+  gulp.watch(SRC_ROOT + '**/*.*', ['build']);
 });
 
 gulp.task('serve', ['watch'], function () {
@@ -80,11 +78,5 @@ gulp.task('serve', ['watch'], function () {
     );
 });
 
-gulp.task('default', ['doitall', 'watch']);
-
-
-
-
-
-
+gulp.task('default', ['build', 'watch']);
 
